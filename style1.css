@@ -268,7 +268,7 @@ body {
     top: 0;
     right: 30px;
     width: 800px;
-    height: 100%;
+    height: 130%;
     background: transparent;
     transition: 3s;
     animation: manipActiveHover .1s forwards;

@@ -33,7 +33,7 @@ initial-scale=1.0">
         <div class="home-content">
             <h1>Hi, I'm <br>Abdelrahman</h1>
             <h3>Diploma Student</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aliquam id nisi amet quisquam tenetur, labore corporis praesentium assumenda distinctio modi odio facilis, exercitationem incidunt cum? Quasi!</p>
+            <p>I have 7 certifications I know python,css and html I dream to be some thing like frontend or software engneer</p>
             <div class="btn-box">
                 <a href="#">Hire Me</a>
                 <a href="#">let's talk</a>

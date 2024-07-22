@@ -1,59 +1,148 @@
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,
-initial-scale=1.0">
-<title>Personal Portfolio
- Website 
-</title>
-<link rel="stylesheet" href="style1.css">
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrahman Atef</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
+    <div class="container">
+     <video class="video-loop" controls>
+        <source src="./345.mp4" type="video/mp4">
+   </video> 
+        <header class="header">
 
-    <header class="header">
-        <a href="#" class="logo">Abdelrahman Atef</a>
-
-
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+       
+        <div class="title"></div>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li><a href="#bio" class="navigation__link navigation__bio">Bio</a></li>
+                <li><a href="#Skills" class="navigation__link navigation__Skills">Skills</a></li>
+                <li><a href="#media" class="navigation__link navigation__media">Media</a></li>
+                <li><a href="#projects" class="navigation__link navigation__projects">Project</a></li>
+                <!-- <li><a href="#" class="navigation__link">My Client</a></li> -->
+                <li><a href="#contact" class="navigation__link navigation__contact">Contact</a></li>
+            </ul>
         </nav>
-    </header>
+        <div class="toggle">
+            <h3 class="toggle___title">Switch theme</h3>
+            <input type="checkbox" name="Toggle checkbox" id="toggle" class="toggle___checkbox">
+            <label for="toggle" class="toggle___label toggle___label--dark toggle___label--light"></label>
+        </div>
+     </header>
+     
+<section id="bio" class="bio section">
+    <div class="bio__data">
+    <h1 class="bio_heading">Hi There, I'M A Passionate diploma studente</h1> <p class="bio_objective">
+    My name is <span class="bio_name">Abdelrahman Atef </span>A student in<a href="https://www.almdrasa.com/" class="bio_almdrasa">Almdrasa.com</a>  <br>Sharing content medias <br>👉
+   <a href="https://www.facebook.com/abdelrahman.atef.9026/" target="_blank" class="facebook-btn">
+        <i class='bx bxl-facebook'></i>
+    </a>
+    <a href="https://www.linkedin.com/in/abdelrahman-atef-boraei-71bb30314/" target="_blank" class="linkedin-btn">
+        <i class='bx bxl-linkedin'></i>
+    </a>
+    <a href="https://github.com/doubleA125" target="_blank" class="github-btn">
+    <i class='bx bxl-github' ></i></a>
+    <i class='bx bxl-youtube'></i>
+</p>
+    <a href="#contact" class="bio__links say-hi-links">Say hi</a>
+    <a href="./Abdelrahman Atef.docx.pdf" class="bio__links find-out-links">Download cv<span class="Arrow">↓</span></a>
+    </div>
+    <div class="bio__pic-content">
+        <img class="pic" src="2.png" alt="image of Abdelrahman Atef logo">
+    </div>
+    </section> 
+    <section id="Skills" class="Skills section section--with-bg">
+            <h2 class="h2-heading">Skills</h2>
+    <ul class="skills_list">
+        <li class="skills_item">
+           
+            <h2 class="skills_title">HTML</h2>
+            <span class="skills__years">2 years</span>
+        </li>
+        <li class="skills_item">
+            <h2 class="skills_title">CSS</h2>
+            <span class="skills__years">3 months</span>
+        </li>
+        <li class="skills_item">
+            <h2 class="skills_title">Javascript</h2>
+            <span class="skills__years">3 months</span>
+        </li>
+        <li class="skills_item">
+            <h2 class="skills_title">JAVA</h2>
+            <span class="skills__years">2 months</span>
+        </li>
+        <li class="skills_item">
+            <h2 class="skills_title">Github</h2>
+            <span class="skills__years">1 years</span>
+        </li>
+        <li class="skills_item">
+            <h2 class="skills_title">Python</h2>
+            <span class="skills__years">9 months</span>
+        </li>
+    </ul>
+</section>
 
-    <section class="home">
+<section id="media" class="media section">
+    <video class="media__video" poster="1234.png" controls>
+    <source src="./1.mp4" type="video/mp4"></source>
+</video>
+</section>
+ <section id="projects" class="projects section">
+    <h2 class="h2-heading">My Featured <br>projects</h2>
+    <div class="projects__main">
+        <img class="p-img" src="3.png" alt="Hourly Weather Forcast">
+        <div class="project-data">
+            <h3 class="h3-heading">Hourly Weather <br>Forcast</h3>
+            <p class="projects-description">
+                Hourly Weather Forcast is an app that shows the weather at every hour <br>
+                in any city or a country and it have not shared to be like an app until forever
+            </p>
+            
+        </div>
+    </div>
+ </section>
+ <p id="contact">
+    <div class="Contact-container">
+        <div class="box">
+    <span class="m">Feel free <br> to be<br> in Contact with me</span><br> <br>
+    <span class="gmail">boody2012atef@gmail.com</span><br> <br>
+    <a href="https://web.telegram.org/a/#-1002004956843" target="_blank" class="btn telegram-btn">
+    <i class='bx bxl-telegram'></i>
+    </a>
+    <a href="https://www.facebook.com/abdelrahman.atef.9026/" target="_blank" class="btn facebook-btn">
+    <i class='bx bxl-facebook'></i>
+    </a>
+    <a href="https://www.linkedin.com/in/abdelrahman-atef-boraei-71bb30314/" target="_blank" class="btn linkedin-btn">
+    <i class='bx bxl-linkedin'></i>
+    </a>
+    <a href="https://github.com/doubleA125" target="_blank" class="btn github-btn">
+    <i class='bx bxl-github' ></i></a> </p></div>
+    
+ 
 
-        <div class="home-content">
-            <h1>Hi, I'm <br>Abdelrahman</h1>
-            <h3>Diploma Student</h3>
-            <p>I have 10 certifications I know python,css and html I dream to be some thing like frontend or software engneer</p>
-            <div class="btn-box">
-                <a href="#">Hire Me</a>
-                <a href="#">let's talk</a>
+    <div class="box">
+        <h1 class="M">Let's work <br>
+             Together!</h1>
+        <form action="results.html">
+            <div class="contact-inputs">
+                <input class="contact-input" type="text" name="Full-Name" placeholder="Full Name" required>
+                <input class="contact-input" required type="text" pattern="[0-9]{10}" ondrop="return false;" onpaste="return false;" onkeypress='return event.charCode>=48 && event.charCode<=57' name="phone" placeholder="Phone No." maxlenght="11">                
             </div>
-        </div>
-        <div class="home-sci">
-            <a href="https://www.facebook.com/abdelrahman.atef.9026/" target="_blank" class="facebook-btn">
-                <i class='bx bxl-facebook'></i>
-            </a>
-            <a href="https://www.linkedin.com/in/abdelrahman-atef-boraei-71bb30314/" target="_blank" class="linkedin-btn">
-                <i class='bx bxl-linkedin'></i>
-            </a>
-            <a href="https://github.com/doubleA125" target="_blank" class="github-btn">
-            <i class='bx bxl-github' ></i></a>
-        </div>
-
-        <span class="home-imghover">
-
-        </span>
-    </section>
-
+            <textarea class="contact-input contact-textarea" name="description" id="description" rows="1" placeholder="Your Message"></textarea>
+            <input class="contact__button" type="submit" value="Send Message">
+        </form></div> </div>
+ 
+</div> 
+<footer class="copyright">&copy;2024 by Abdelrahman Atef</footer>
+    </div>
+    <footer></footer>
 </body>
 </html>

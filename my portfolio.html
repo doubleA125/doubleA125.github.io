@@ -1,580 +1,148 @@
-:root {
-    --container-width: 119rem; --gutter: 2rem;
-    --color-black:
-    #000;
-    --color-white:
-    #fff;
-    --color-blue:
-    #2374e1;
-    --color-light-blue:
-    #1d9bf0;
-    --color-dark-blue: #0a66c2;
-    --color-darker-blue: #143ce8;
-    --color-red: free;
-    --color-green:
-    #03a696;
-    --color-grey: #161616;
-    --color-dark-green: #42959b;
-    --color-background: var(--color-white); --color-text: var(-color-black);
-    --color-box-img: var(--color-black);
-    --color-link-bg: var(--color-black);
-    --color-input-border: var(--color-black);
-    --font-family-raleway: "Raleway", sans-serif;
-    --font-family-poppins: "Poppins", sans-serif;
-    --font-weight-regular: 400;
-    --font-weight-medium: 500; --font-weight-semi-bold: 600; --font-weight-bold: 700;
-    --font-size-70: 7rem;
-    --font-size-65: 6.5rem;
-    --font-size-40: 4rem;
---font-size-38: 3.8em;
---font-size-24: 2.4rem;
---font-size-22: 2.2em;
---font-size-20: 2rem;
---font-size-18: 1.8rem;
---font-size-15: 1.5rem;
---transition-timing: 0.3s;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrahman Atef</title>
 
-/* Css reset */
-* {
-    margin: 0;
-    padding: 0;
-    font: inherit;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-*, *::before,
-*::after {
-    box-sizing: border-box;
-}
+    <link rel="stylesheet" href="Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+     <video class="video-loop" controls>
+        <source src="./345.mp4" type="video/mp4">
+   </video> 
+        <header class="header">
 
-a {
-    color: inherit;
-    display: inline-block;
-}
+       
+        <div class="title"></div>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li><a href="#bio" class="navigation__link navigation__bio">Bio</a></li>
+                <li><a href="#Skills" class="navigation__link navigation__Skills">Skills</a></li>
+                <li><a href="#media" class="navigation__link navigation__media">Media</a></li>
+                <li><a href="#projects" class="navigation__link navigation__projects">Project</a></li>
+                <!-- <li><a href="#" class="navigation__link">My Client</a></li> -->
+                <li><a href="#contact" class="navigation__link navigation__contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle">
+            <h3 class="toggle___title">Switch theme</h3>
+            <input type="checkbox" name="Toggle checkbox" id="toggle" class="toggle___checkbox">
+            <label for="toggle" class="toggle___label toggle___label--dark toggle___label--light"></label>
+        </div>
+     </header>
+     
+<section id="bio" class="bio section">
+    <div class="bio__data">
+    <h1 class="bio_heading">Hi There, I'M A Passionate diploma studente</h1> <p class="bio_objective">
+    My name is <span class="bio_name">Abdelrahman Atef </span>A student in<a href="https://www.almdrasa.com/" class="bio_almdrasa">Almdrasa.com</a>  <br>Sharing content medias <br>👉
+   <a href="https://www.facebook.com/abdelrahman.atef.9026/" target="_blank" class="facebook-btn">
+        <i class='bx bxl-facebook'></i>
+    </a>
+    <a href="https://www.linkedin.com/in/abdelrahman-atef-boraei-71bb30314/" target="_blank" class="linkedin-btn">
+        <i class='bx bxl-linkedin'></i>
+    </a>
+    <a href="https://github.com/doubleA125" target="_blank" class="github-btn">
+    <i class='bx bxl-github' ></i></a>
+    <i class='bx bxl-youtube'></i>
+</p>
+    <a href="#contact" class="bio__links say-hi-links">Say hi</a>
+    <a href="./Abdelrahman Atef.docx.pdf" class="bio__links find-out-links">Download cv<span class="Arrow">↓</span></a>
+    </div>
+    <div class="bio__pic-content">
+        <img class="pic" src="2.png" alt="image of Abdelrahman Atef logo">
+    </div>
+    </section> 
+    <section id="Skills" class="Skills section section--with-bg">
+            <h2 class="h2-heading">Skills</h2>
+    <ul class="skills_list">
+        <li class="skills_item">
+           
+            <h2 class="skills_title">HTML</h2>
+            <span class="skills__years">2 years</span>
+        </li>
+        <li class="skills_item">
+            <h2 class="skills_title">CSS</h2>
+            <span class="skills__years">3 months</span>
+        </li>
+        <li class="skills_item">
+            <h2 class="skills_title">Javascript</h2>
+            <span class="skills__years">3 months</span>
+        </li>
+        <li class="skills_item">
+            <h2 class="skills_title">JAVA</h2>
+            <span class="skills__years">2 months</span>
+        </li>
+        <li class="skills_item">
+            <h2 class="skills_title">Github</h2>
+            <span class="skills__years">1 years</span>
+        </li>
+        <li class="skills_item">
+            <h2 class="skills_title">Python</h2>
+            <span class="skills__years">9 months</span>
+        </li>
+    </ul>
+</section>
 
-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    border: 0;
-}
-
-ul,ol {
-    list-style: none;
-}
-
-/* End css reset */
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 11rem;
-}
-
-body {
-    font-size: 1.6rem;
-    font-family: var(--font-family-raleway);
-    background-color: var(--color-background);
-    color: var(--color-text);
-}
-
-.container {
-    display: grid;
-    row-gap: 8rem;
-    margin: 0 auto;
-    max-width: calc(var(--container-width) + calc(var(--gutter) * 2));
-    padding: var(--gutter);
-}
-
-
- .video-loop { 
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0.1; 
-    z-index: -1;
-} 
-
- /* Global Style */
-
- .section {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    align-items: start;
-}
-
-.section--with-bg {
-    padding: 7rem 0;
-}
-
-.section--with-bg::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #b7b7b7;
-    justify-self: center;
-    z-index: -1;
-    border-radius: 1rem;
-}
-
-.h2-heading {
-    font-size: var(--font-size-65);
-    font-weight: var(--font-weight-bold);
-    grid-column: 1/-1;
-    margin-bottom: 8.7rem;
- }
+<section id="media" class="media section">
+    <video class="media__video" poster="1234.png" controls>
+    <source src="./1.mp4" type="video/mp4"></source>
+</video>
+</section>
+ <section id="projects" class="projects section">
+    <h2 class="h2-heading">My Featured <br>projects</h2>
+    <div class="projects__main">
+        <img class="p-img" src="3.png" alt="Hourly Weather Forcast">
+        <div class="project-data">
+            <h3 class="h3-heading">Hourly Weather <br>Forcast</h3>
+            <p class="projects-description">
+                Hourly Weather Forcast is an app that shows the weather at every hour <br>
+                in any city or a country and it have not shared to be like an app until forever
+            </p>
+            
+        </div>
+    </div>
+ </section>
+ <p id="contact">
+    <div class="Contact-container">
+        <div class="box">
+    <span class="m">Feel free <br> to be<br> in Contact with me</span><br> <br>
+    <span class="gmail">boody2012atef@gmail.com</span><br> <br>
+    <a href="https://web.telegram.org/a/#-1002004956843" target="_blank" class="btn telegram-btn">
+    <i class='bx bxl-telegram'></i>
+    </a>
+    <a href="https://www.facebook.com/abdelrahman.atef.9026/" target="_blank" class="btn facebook-btn">
+    <i class='bx bxl-facebook'></i>
+    </a>
+    <a href="https://www.linkedin.com/in/abdelrahman-atef-boraei-71bb30314/" target="_blank" class="btn linkedin-btn">
+    <i class='bx bxl-linkedin'></i>
+    </a>
+    <a href="https://github.com/doubleA125" target="_blank" class="btn github-btn">
+    <i class='bx bxl-github' ></i></a> </p></div>
+    
  
- .h3-heading {
-    font-size: var(--font-size-38);
-    font-weight: var(--font-weight-bold);
-    margin-bottom: 2.5rem;
- } 
-/* End Global Style */
-.header {
-    position: sticky;
-    top: 0;
-    background-color: var(--color-background);
-    padding: 1.6rem 0;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-}
 
-.header::before {
-    background-color: var(--color-background);
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100vw;
-    border-bottom: 0.1rem solid var(--color-input-border);
-    top: 0;
-    z-index: -1;
-}
-
-.navigation__list {
-    display: flex;
-    gap: 2rem;
-}
-
-.navigation__link:link,
-.navigation__link:visited {
-    text-decoration: none;
-    font-weight: var(--font-weight-medium);
-}
-
-.navigation__link:hover,
-.navigation__link:active {
-    text-decoration: underline;
-    font-weight: var(--color-text);
-}
-
-/* Toggle */
-
-.toggle {
-    display: flex;
-    gap: 1rem;
-    margin-left: auto;
-}
-
-.toggle___title {
-    font-weight: var(--font-weight-medium);
-    font-size: var(--font-size-18);
-}
-
-.toggle___checkbox {
-    display: none;
-}
-
-.toggle___label {
-    display: block;
-    position: relative;
-    background-color: var(--color-black);
-    border-radius: 1.5rem;
-    width: 4.5rem;
-    height: 2.2rem;
-    cursor:pointer;
-    padding: .3rem .4rem;
-    transition: 0.3s;
-}
-
-.toggle___label::after {
-    content: "";
-    width: 1.6rem;
-    height: 1.6rem;
-    border-radius: 50%;
-    display: block;
-    background-color: var(--color-white);
-    transition: 0.3s;
-}
-
-.toggle___checkbox:checked + .toggle___label {
-    background-color: var(--color-white);
-}
-
-.toggle___checkbox:checked + .toggle___label::after {
-    transform: translateX(2.1rem);
-    background-color: var(--color-green);
-}
-
-
-/* End Toggle */
-
-
-/* Bio */
-
-.bio {
-    column-gap: 7.4rem;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.bio_heading {
-    font-size: 5rem;
-    font-weight: var(--font-weight-bold);
-}
-
-.bio_objective {
-    font-family: var(--font-family-poppins);
-    font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-20);
-    margin: 3rem 0 8rem;
-}
-
-.bio_name {
-    font-weight: var(--font-weight-semi-bold);
-}
-
-.bio_almdrasa {
-   color: var(--color-green);
-}
-
-.github-btn {
-    color: var(--color-black);
-}
-
-.facebook-btn {
-    color: var(--color-light-blue);
-}
-
-.linkedin-btn {
-    color: var(--color-dark-blue);
-}
-
-.telegram-btn {
-    color: #1d9bf0;
-}
-
-.bio__links {
-    font-size: 2,4rem;
-    font-weight: var(--font-weight-semi-bold);
-    text-decoration: none;
-}
-
-.say-hi-links {
-    background: var(--color-link-bg);
-    color: var(--color-white);
-    padding: 0.7rem 4.7rem;
-}
-
-.find-out-links {
-    padding: 0.7rem 0;
-    margin-inline-start: 1.4rem;
-}
-
-@keyframes jump {
-    0% {
-        transform: translateY(0.5rem);
-    }
-
-    35% {
-        transform: translateY(-0.5rem);
-    }
-
-    70%{
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.Arrow {
-    display: inline-block;
-    animation: jump 1s infinite alternate ease;
-}
-
-.bio__pic-content {
-   display: flex;
-   position: relative;
-   align-items: flex-end;
-   justify-self: flex-end;
-}
-
-.bio__pic-content::before {
-   content: "";
-   position: absolute;
-   background-color: var(--color-box-img);
-   width: 100%;
-   height: 26rem;
-   z-index: -1;
-   border-radius: 1.8rem;
-   box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);
-}
-
-.pic {
-    width: 42.7;
-}
-/* End Bio */
-
-.bxl-youtube {
-    color: red;
-}
-
-/* Skills */
-.skills_list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 5rem;
-}
-
-.skills_item {
-    transition: var(--transition-timing);
-    user-select: none;
-}
-
-.skills_title {
-    font-size: var(--font-size-24);
-    font-weight: var(--font-weight-semi-bold);
-    margin-left: 7rem;
-}
-
-.skills__years {
-    display: inline-block;
-    font-size: var(--font-size-20);
-    margin-top: 1rem;
-    margin-left: 7rem;
-}
-
-.skills_item:hover {
-    text-shadow: 0 0 2px var(--color-green);
-}
-
-/* End Skills */
-
-/* Media */
-.media {
-    align-items: center;
-    justify-content: center;
-}
-.media__video {
-    padding-top: 1rem;
-    padding-inline: 20rem;
-}
-
-
-.p-img {
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, .2);
-    width: 30rem;
-    height: 30rem;
-    
-}
-/* End Media */
-
-/* Projects */
-
-.projects__main {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 7.4rem;
-    row-gap: 7rem;
-}
-
-.projects-description {
-    line-height: 1.5;
-}
-
-/* End Projects */
-
-.btn {
-    position: relative;
-    padding-right: 3px;
-}
-
-.gmail {
-    position: relative;
-    text-decoration:underline ;   
-}
-
-
-.m {
-    size: 1rem;
-}
-
-.M {
-    font-size: 3rem;
-    font-weight: bolder;
-    padding-bottom: 3rem;
-}
-
-.Contact-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Adjust the fractions to suit your needs */
-        gap: 10px; /* Optional: adds space between the divs */
-    
-}
-
-.box {
-    padding: 10px;
-    border: 1px solid transparent;
-}
-
-.fit {
-    width: fit-content;
-    height: fit-content;
-}
-
-.contact-inputs {
-    display: flex;
-    gap: 3rem;
-}
-
-.contact-input {
-    border: 0;
-    outline: 0;
-    background: transparent;
-    border-bottom: 0.1rem solid var(--color-input-border);
-    flex: 1;
-}
-
-.contact-textarea {
-    padding-left: 50%;
-    width: 100%;
-    margin-top: 4rem;
-}
-
-.contact__button {
-    border: 0;
-    background-color: gold;
-    color: var(--color-white);
-    padding: 1rem 1.1rem;
-    cursor: pointer;
-    font-weight: var(--font-weight-medium);
-    font-size: var(--font-size-24);
-    margin-top: 3.4rem;
-    border-radius: 3rem;
-}
-
-.contact__button:hover {
-    border: 0;
-    background-color: silver;
-    color: var(--color-white);
-    padding: 1rem 1.1rem;
-    font-weight: var(--font-weight-medium);
-    font-size: var(--font-size-24);
-    margin-top: 3.4rem;
-    border-radius: 3rem;
-}
-
-
-
-
-.copyright { 
-    padding: 1rem 0;
-    font-size: var(--font-size-15);
-    border-top: 0.1rem solid var(--color-black);
-}
-
-
-.container:has(#bio:target) .navigation__bio {
-    color: var(--color-blue);
-    text-decoration: underline;
-    font-weight: var(--font-weight-bold);
-}
-
-.container:has(.Skills:target) .navigation__Skills {
-    color: var(--color-blue);
-    text-decoration: underline;
-    font-weight: var(--font-weight-bold);
-}
-
-.container:has(#media:target) .navigation__media {
-    color: var(--color-blue);
-    text-decoration: underline;
-    font-weight: var(--font-weight-bold);
-}
-
-.container:has(#projects:target) .navigation__projects {
-    color: var(--color-blue);
-    text-decoration: underline;
-    font-weight: var(--font-weight-bold);
-}
-
-.container:has(#contact:target) .navigation__contact {
-    color: var(--color-blue);
-    text-decoration: underline;
-    font-weight: var(--font-weight-bold);
-}
-
-/*Theme*/
-html:has(.toggle___checkbox:checked) {
-    --color-background: var(--color-black);
-    --color-text: var(--color-white);
-    --color-box-img: var(--color-green);
-    --color-grey: #080808;
-    --color-link-bg: var(--color-green);
-    --color-input-border: var(--color-white);
-}
-/* End Theme */
-
-
-/* Responsive*/
-/* @media (max-width: 1000px) { html {
-    font-size: 8px;
-    }
-    }
-    @media (max-width: 800px) {
-    .container { row-gap: 8rem;
-    }
-    
-    .section {
-        grid-template-columns: 1fr
-    }
-
-
-    .bio_pic-content { 
-        grid-row: 1;
-        justify-self: center;
-        margin-bottom: 4rem;
-        }
-.skills_list {
-    grid-template-columns: repeat (2, 1fr);
-}       
-}
+    <div class="box">
+        <h1 class="M">Let's work <br>
+             Together!</h1>
+        <form action="results.html">
+            <div class="contact-inputs">
+                <input class="contact-input" type="text" name="Full-Name" placeholder="Full Name" required>
+                <input class="contact-input" required type="text" pattern="[0-9]{10}" ondrop="return false;" onpaste="return false;" onkeypress='return event.charCode>=48 && event.charCode<=57' name="phone" placeholder="Phone No." maxlenght="11">                
+            </div>
+            <textarea class="contact-input contact-textarea" name="description" id="description" rows="1" placeholder="Your Message"></textarea>
+            <input class="contact__button" type="submit" value="Send Message">
+        </form></div> </div>
  
-.projects__main {
-    grid-template-columns: 1fr;
-    row-gap: 6rem;
-    justify-items: center;
-}
-
-.contact {
-    row-gap: 6rem;
-}
-
-.contact__formcontent {
-    order: -1;
-}
-
-
-
-
-    @media (max-width: 500px) {
-        .pic {
-            align-self: center;
-        }
-    }  */
-
-    /* End Responsive */
+</div> 
+<footer class="copyright">&copy;2024 by Abdelrahman Atef</footer>
+    </div>
+    <footer></footer>
+</body>
+</html>

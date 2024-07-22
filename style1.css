@@ -156,7 +156,7 @@ body {
 
 .navigation__list {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .navigation__link:link,

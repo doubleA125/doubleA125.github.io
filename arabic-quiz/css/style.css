@@ -1,0 +1,206 @@
+/* Base styles for desktop */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2b2b2b;
+  color: white;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.bt {
+  justify-content: center;
+  justify-self: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.menu-item.completed {
+  color: #00ffff;
+}
+
+.menu-title {
+  flex-grow: 1;
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 20px;
+  display: none;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.submenu-item {
+  padding: 5px 0;
+  color: #888;
+}
+
+.submenu-item.completed {
+  color: #00ffff;
+}
+
+.menu-item.completed:hover .submenu-item {
+  color: #00ffff;
+}
+
+.next-button {
+  width: 500px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: gold;
+}
+
+video {
+  border-radius: 10px;
+  max-width: 100%;
+  margin-top: 70px; /* Ensures video is not hidden under top menu */
+}
+
+img {
+  order: -1;
+}
+
+body .body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.top-menu {
+  width: 100%;
+  height: 50px;
+  background-color: #444;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000; /* Ensures top menu stays above other content */
+}
+
+.menu-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+  padding: 5px;
+  outline: none;
+}
+
+.menu-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+body.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+.sidebar .light-mode {
+  width: 250px;
+  height: 100vh;
+  color: white;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries for responsiveness */
+
+/* Adjust sidebar and menu for tablets */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .menu-item {
+    font-size: 14px;
+  }
+
+  .next-button {
+    width: 80%;
+    height: 45px;
+  }
+}
+
+/* Adjust for mobile devices */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .top-menu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .menu-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .next-button {
+    width: 100%;
+    height: 40px;
+  }
+
+  video {
+    margin-top: 60px;
+    margin: auto; /* Adjust margin-top to ensure video is below top menu */
+  }
+}

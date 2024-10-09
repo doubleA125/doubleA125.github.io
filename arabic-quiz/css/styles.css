@@ -1,0 +1,90 @@
+/* css/styles.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#hearts-container {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+/* Quiz Content */
+.quiz-container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-button {
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.option-button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Leaderboard Styles */
+#leaderboard-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#leaderboard-table th,
+#leaderboard-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+#leaderboard-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+#leaderboard-table tr:hover {
+  background-color: #f1f1f1;
+}
